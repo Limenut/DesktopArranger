@@ -1,0 +1,20 @@
+﻿<Window x:Class="DesktopArranger.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DesktopArranger"
+        mc:Ignorable="d"
+        Title="Desktop Arranger" Height="80" Width="320">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <Button x:Name="button_Save"    Grid.Column="0" Content="Save"      Margin="8" Click="button_Save_Click"/>
+        <Button x:Name="button_Restore" Grid.Column="1" Content="Restore"   Margin="8" Click="button_Restore_Click"/>
+        <Button x:Name="button_Undo"    Grid.Column="2" Content="Undo"      Margin="8" Click="button_Undo_Click" />
+    </Grid>
+</Window>
